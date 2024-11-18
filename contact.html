@@ -30,60 +30,19 @@
             margin-bottom: 20px;
             font-size: 2rem;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            text-align: left;
-            margin-bottom: 5px;
-            font-size: 1rem;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .submit-button {
-            padding: 10px;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .submit-button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
     <div class="contact-container">
         <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email address" required>
-
-            <label for="country">Country of Residence:</label>
-            <input type="text" id="country" name="country" placeholder="Your country" required>
-
-            <label for="city">City of Residence:</label>
-            <input type="text" id="city" name="city" placeholder="Your city" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="What are you interested in?" required></textarea>
-
-            <input type="hidden" name="_redirect" value="/response.html">
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
+        <div data-paperform-id="ubyzkbum"></div>
+        <script>
+            (function() {
+                var script = document.createElement('script');
+                script.src = "https://paperform.co/__embed.min.js";
+                document.body.appendChild(script);
+            })();
+        </script>
     </div>
 </body>
 </html>
